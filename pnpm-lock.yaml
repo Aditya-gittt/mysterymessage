@@ -128,6 +128,18 @@ importers:
         specifier: ^8.34.0
         version: 8.34.0(eslint@9.29.0)(typescript@5.8.2)
 
+  packages/lib:
+    dependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      dotenv:
+        specifier: ^16.5.0
+        version: 16.5.0
+      mongoose:
+        specifier: ^8.16.0
+        version: 8.16.0(socks@2.8.4)
+
   packages/model:
     dependencies:
       '@repo/typescript-config':
@@ -136,6 +148,15 @@ importers:
       mongoose:
         specifier: ^8.16.0
         version: 8.16.0(socks@2.8.4)
+
+  packages/schema:
+    dependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      zod:
+        specifier: ^3.25.67
+        version: 3.25.67
 
   packages/typescript-config: {}
 
@@ -867,6 +888,10 @@ packages:
 
   dotenv@16.0.3:
     resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
+
+  dotenv@16.5.0:
+    resolution: {integrity: sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==}
     engines: {node: '>=12'}
 
   dunder-proto@1.0.1:
@@ -2209,6 +2234,9 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
+  zod@3.25.67:
+    resolution: {integrity: sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==}
+
 snapshots:
 
   '@babel/runtime-corejs3@7.27.0':
@@ -2953,6 +2981,8 @@ snapshots:
       no-case: 2.3.2
 
   dotenv@16.0.3: {}
+
+  dotenv@16.5.0: {}
 
   dunder-proto@1.0.1:
     dependencies:
@@ -4594,3 +4624,5 @@ snapshots:
   yn@3.1.1: {}
 
   yocto-queue@0.1.0: {}
+
+  zod@3.25.67: {}
