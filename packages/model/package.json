@@ -1,0 +1,19 @@
+{
+  "name": "@repo/model",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "exports": {
+    "." : "./dist/user.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.16.0",
+    "@repo/typescript-config" : "workspace:*"
+  }
+}
